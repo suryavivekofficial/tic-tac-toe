@@ -5,9 +5,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
-.container {
-    height: 20rem;
-    width: 25rem;
+.btn {
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid rgb(0, 183, 255);
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn:hover {
+    background-color: white;
 }

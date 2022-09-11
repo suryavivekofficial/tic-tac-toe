@@ -33,8 +33,12 @@ export default function App() {
         } else {
             alert("The winner is Player 2.");
         }
-        setTicks(Array(9).fill(null));
+        resetGame();
+    };
+
+    const resetGame = () => {
         setIsPlayer(true);
+        setTicks(Array(9).fill(null));
     };
 
     return (
@@ -48,6 +52,9 @@ export default function App() {
                     />
                 ))}
             </div>
+            <button className="btn" onClick={resetGame}>
+                Reset
+            </button>
         </div>
     );
 }
